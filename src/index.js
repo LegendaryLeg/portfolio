@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 export default function MyWeb() {
   return (
       <div>
-          <h1>Welcome to my Web</h1>
+          <h1>Welcome to my Web Loh</h1>
       </div>
   );
 }
