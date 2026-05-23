@@ -3,6 +3,7 @@ import { ImageWithFallback } from '../../components/figma/ImageWithFallback'
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '../../components/ui/button'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../../components/ui/carousel'
+import { publicAsset } from '../lib/publicAsset'
 
 const Projects = () => {
   const projects = [
@@ -10,8 +11,7 @@ const Projects = () => {
       title: 'E-COMMERCE',
       subtitle: 'Online Store Platform',
       description: 'A modern e-commerce solution with seamless checkout and inventory management.',
-      image:
-        '/images/Tea Plantation.jpg',
+      image: publicAsset('images/Tea Plantation.jpg'),
       tags: ['React', 'Tailwind CSS', 'JavaScript', 'Supabase', 'Vercel'],
       color: '#d4af37',
       liveUrl: 'https://primeempire.kz/',
@@ -21,8 +21,7 @@ const Projects = () => {
       title: 'COMPUTER VISION',
       subtitle: 'YOLOv8 Object Detection',
       description: 'Real-time foreign object detection solution for conveyor belt in industrial settings.',
-      image:
-        '/images/YOLOv8.jpg',
+      image: publicAsset('images/YOLOv8.jpg'),
       tags: ['Python', 'Scikit-learn', 'PyTorch', 'OpenCV', 'Hugging Face', 'NumPy', 'Pandas', 'YOLOv8'],
       color: '#b8956a',
       liveUrl: '#',
@@ -33,7 +32,7 @@ const Projects = () => {
       subtitle: 'ДорЗнак — Road Signs Landing',
       description:
         'Production-ready landing site for road sign manufacturing in Kazakhstan, with product categories, pricing, and WhatsApp lead capture.',
-      image: '/images/trafficsignal.png',
+      image: publicAsset('images/trafficsignal.png'),
       tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Vercel'],
       color: '#8b7355',
       liveUrl: 'https://www.trafficsignal.kz/',
@@ -44,7 +43,7 @@ const Projects = () => {
       subtitle: 'Machine Learning Classifier',
       description:
         'Supervised ML system that classifies websites as phishing or legitimate using URL and HTML features, with Decision Tree and Logistic Regression models.',
-      image: '/images/phishingdetection.jpg',
+      image: publicAsset('images/phishingdetection.jpg'),
       tags: ['Python', 'Scikit-learn', 'Pandas', 'Decision Tree', 'Pickle'],
       color: '#ff6b35',
       liveUrl: 'https://github.com/LegendaryLeg/Phishing-Websites-Detection-',
@@ -55,7 +54,7 @@ const Projects = () => {
       subtitle: 'ML + Power BI Dashboard',
       description:
         'Decision Tree classifier to predict heart attack risk from demographic and health data, with interactive Power BI visualizations for insights.',
-      image: '/images/heart-attack.jpg',
+      image: publicAsset('images/heart-attack.jpg'),
       tags: ['Python', 'Scikit-learn', 'Pandas', 'Power BI', 'Decision Tree'],
       color: '#d4af37',
       liveUrl: 'https://github.com/LegendaryLeg/Heart-Attack-Prediction',
@@ -66,7 +65,7 @@ const Projects = () => {
       subtitle: 'ML + Flask Web App',
       description:
         'Python ML model trained on touchscreen signatures from ~5 participants to identify individuals, comparing Decision Tree vs. Linear Regression, with a Flask demo site to test predictions.',
-      image: '/images/signture.jpg',
+      image: publicAsset('images/signture.jpg'),
       tags: ['Python', 'Flask', 'Scikit-learn', 'Decision Tree', 'Linear Regression'],
       color: '#b8956a',
       liveUrl: '#',

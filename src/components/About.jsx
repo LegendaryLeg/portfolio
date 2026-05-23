@@ -1,4 +1,5 @@
 import React from 'react'
+import { publicAsset } from '../lib/publicAsset'
 import { ImageWithFallback } from '../../components/figma/ImageWithFallback'
 import { Award, Coffee, Users, Flame } from 'lucide-react'
 
@@ -71,7 +72,7 @@ const About = () => {
               <div className="relative">
                 <div className="aspect-square bg-[#1a1a1a] border-4 border-[#3d3527] pixel-corners overflow-hidden relative">
                   <ImageWithFallback
-                    src="images/hike 2024.jpg"
+                    src={publicAsset('images/hike 2024.jpg')}
                     alt="Me"
                     className="w-full h-full object-cover opacity-60"
                     style={{ imageRendering: 'pixelated', filter: 'sepia(0.3) contrast(1.2)' }}
