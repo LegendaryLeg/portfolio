@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 // https://vitejs.dev/config/
+// GitHub Pages project site: https://legendaryleg.github.io/portfolio/
 export default defineConfig({
+  base: '/portfolio/',
   plugins: [react()],
   resolve: {
     alias: {
