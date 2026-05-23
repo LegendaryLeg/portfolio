@@ -1,5 +1,5 @@
 import React from 'react'
-import { Github, Linkedin, Mail, Twitter, Flame } from 'lucide-react'
+import { Github, Linkedin, Instagram, Flame } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -7,8 +7,12 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/LegendaryLeg', label: 'GitHub', color: '#d4af37' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/raiyan-mokhammad-5207582a7/', label: 'LinkedIn', color: '#b8956a' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter', color: '#8b7355' },
-    { icon: Mail, href: 'mailto:raiyan.mokhd@gmail.com', label: 'Email', color: '#ff6b35' },
+    {
+      icon: Instagram,
+      href: 'https://www.instagram.com/legion4ever?igsh=MXZ3dnU3YzMyZjY1Nw%3D%3D&utm_source=qr',
+      label: 'Instagram',
+      color: '#ff6b35',
+    },
   ]
 
   return (
